@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import { AppLayout } from "@/layouts";
-import { Home, NotFound } from "@/pages";
+import { Home, MeetingPage, NotFound } from "@/pages";
 
 const Router: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const Router: React.FC = () => {
         <Route path="/" element={<AppLayout />}>
           <Route path="home" element={<div>Home</div>} />
           <Route path="card-news" element={<div>Card News</div>} />
-          <Route path="meeting" element={<div>Meeting</div>} />
+          <Route path="meeting" element={<MeetingPage />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
