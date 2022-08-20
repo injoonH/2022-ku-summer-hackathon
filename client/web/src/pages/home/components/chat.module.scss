@@ -1,0 +1,57 @@
+@use "src/scss/variables";
+
+.chatWrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chatWrapperLeft {
+  justify-content: flex-start;
+
+  .chat {
+    max-width: 70%;
+  }
+}
+
+.chat {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border: 1px solid #707070;
+  border-radius: 11px;
+  width: fit-content;
+  max-width: 80%;
+  height: fit-content;
+  padding: 10px;
+
+  background-color: #ffffff;
+}
+
+.chat > div {
+  box-shadow: variables.$shadow-dark;
+}
+
+.mascotImageWrapper {
+  position: relative;
+  bottom: 32px;
+
+  overflow: hidden;
+
+  width: 64px;
+  height: 64px;
+}
+
+.mascotImage {
+  transform: scaleX(-1);
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
