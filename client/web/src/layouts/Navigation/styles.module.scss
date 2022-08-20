@@ -1,0 +1,37 @@
+$nav-height: 50px;
+$nav-icon-size: 32px;
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: $nav-height;
+}
+
+.container * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > a {
+  flex: 1;
+  height: 100%;
+
+  svg {
+    width: $nav-icon-size;
+    height: $nav-icon-size;
+  }
+}
+
+.active svg {
+  fill: #535bf2;
+}

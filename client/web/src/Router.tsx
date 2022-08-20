@@ -1,14 +1,19 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-// import NotFound from "@/pages/NotFound";
+import { AppLayout } from "@/layouts";
 import { Home, NotFound } from "@/pages";
 
-const Router: React.FC<{}> = () => {
+const Router: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route index element={<Navigate to="/home" replace={true} />} />
+        <Route path="/" element={<AppLayout />}>
+          <Route path="home" element={<div>Home</div>} />
+          <Route path="card-news" element={<div>Card News</div>} />
+          <Route path="meeting" element={<div>Meeting</div>} />
+        </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

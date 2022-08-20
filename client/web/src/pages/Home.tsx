@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "@/pages/home.module.scss";
 
-const Home: React.FC<{}> = () => {
+export const Home: React.FC = () => {
   return (
     <div className={styles.home}>
       <span>ZOOM Link</span>
@@ -14,5 +14,3 @@ const Home: React.FC<{}> = () => {
     </div>
   );
 };
-
-export default Home;
