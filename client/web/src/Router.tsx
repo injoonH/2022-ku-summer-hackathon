@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import { AppLayout } from "@/layouts";
-import { Home, MeetingPage, NotFound } from "@/pages";
+import { Home, NewsPage, MeetingPage, NotFound } from "@/pages";
 
 const Router: React.FC = () => {
   return (
@@ -10,8 +10,8 @@ const Router: React.FC = () => {
       <Routes>
         <Route index element={<Navigate to="/home" replace={true} />} />
         <Route path="/" element={<AppLayout />}>
-          <Route path="home" element={<div>Home</div>} />
-          <Route path="card-news" element={<div>Card News</div>} />
+          <Route path="home" element={<Home />} />
+          <Route path="card-news" element={<NewsPage />} />
           <Route path="meeting" element={<MeetingPage />} />
         </Route>
         <Route path="*" element={<NotFound />} />

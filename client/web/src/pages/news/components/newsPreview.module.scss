@@ -1,0 +1,41 @@
+@use "src/scss/variables";
+
+$image-size: 72px;
+
+.newsPreview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  box-shadow: variables.$shadow;
+  border-radius: 11px;
+  padding: 18px;
+
+  background-color: #ffffff;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 30px;
+  width: 100%;
+
+  img {
+    border-radius: 11px;
+    width: $image-size;
+    height: $image-size;
+  }
+}
