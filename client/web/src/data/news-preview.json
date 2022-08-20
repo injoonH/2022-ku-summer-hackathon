@@ -1,0 +1,26 @@
+{
+  "news": [
+    {
+      "title": "와이파이 연결",
+      "subtitle": "언제 어디서나",
+      "img": "wifi.png"
+    },
+    {
+      "title": "당근마켓",
+      "subtitle": "안 쓰는 물건 사고 팔기",
+      "img": "carrot.png"
+    },
+    {
+      "title": "네이버 길찾기",
+      "subtitle": "어디든 갈 수 있게",
+      "img": "naver-map.png"
+    },
+    { "title": "유튜브", "subtitle": "원하는 영상 시청", "img": "youtube.png" },
+    { "title": "토스", "subtitle": "간편한 금융앱", "img": "toss.png" },
+    {
+      "title": "구글 플레이 스토어",
+      "subtitle": "필요한 앱은 다",
+      "img": "google-play.png"
+    }
+  ]
+}
