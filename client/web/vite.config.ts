@@ -4,7 +4,6 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/2022-ku-summer-hackathon/",
   plugins: [react()],
   resolve: {
     alias: {
