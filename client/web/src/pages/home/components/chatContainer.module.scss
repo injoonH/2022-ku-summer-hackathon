@@ -1,0 +1,13 @@
+@use "src/scss/variables";
+
+.chatContainer {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 36px 20px;
+
+  background-color: variables.$clr-primary-light;
+}

@@ -38,6 +38,8 @@ body {
   min-height: 100vh;
 
   background-color: variables.$clr-main-background;
+
+  color: variables.$clr-text;
 }
 
 button {
@@ -54,6 +56,7 @@ input {
   outline: none;
 
   font-family: inherit;
+  color: inherit;
 }
 
 @media (prefers-color-scheme: light) {
