@@ -11,7 +11,7 @@ export const AppLayout: React.FC = () => {
       <main className={styles.main}>
         <Outlet />
       </main>
-      <Navigation />
+      {/* <Navigation /> */}
     </>
   );
 };
