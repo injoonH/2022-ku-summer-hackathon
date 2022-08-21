@@ -19,7 +19,7 @@ export const NewsContent: React.FC<NewsContentProps> = ({
   if (curPage == 6) {
     setTimeout(() => {
       setcurPage(curPage + 1);
-    }, 4000);
+    }, 3000);
   }
 
   return (
