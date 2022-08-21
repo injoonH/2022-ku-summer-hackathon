@@ -38,7 +38,6 @@ export const NewsPage: React.FC = () => {
           />
         ))}
       </section>
-      <button className={styles.moreButton}>찾으시는 내용이 없나요?</button>
     </>
   );
 };
