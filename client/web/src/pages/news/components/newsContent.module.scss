@@ -1,0 +1,61 @@
+.imageWrapper {
+  position: absolute;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#touchArea1 {
+  position: absolute;
+  top: 10%;
+  left: 4%;
+  background-color: transparent;
+  width: 13%;
+  height: 7%;
+}
+
+#touchArea2 {
+  position: absolute;
+  top: 12%;
+  right: 5%;
+  background-color: transparent;
+  width: 12%;
+  height: 6%;
+}
+
+#touchArea3 {
+  position: absolute;
+  top: 26%;
+  left: 5%;
+  background-color: transparent;
+  width: 92%;
+  height: 6%;
+}
+
+#touchArea4 {
+  position: absolute;
+  top: 17%;
+  left: 7%;
+  background-color: transparent;
+  width: 92%;
+  height: 9%;
+  font-size: 36px;
+}
+
+#touchArea5 {
+  position: absolute;
+  top: 39%;
+  left: 23%;
+  background-color: transparent;
+  width: 55%;
+  height: 5%;
+}
